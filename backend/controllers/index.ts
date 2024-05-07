@@ -1,0 +1,1 @@
+export * as ApartmentController from './apartment.controller';
