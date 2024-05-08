@@ -3,7 +3,7 @@
     "srv": "mongodb+srv://admin:adminPassword@cluster0.homcifk.mongodb.net/apartmentdb"
   },
   "server": {
-    "port": 3000,
+    "port": 8000,
     "origin": "http://localhost:4200"
   }
 }
