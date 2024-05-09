@@ -1,14 +1,12 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {LayoutComponent} from 'src/app/layout/layout.component';
 
 @Component({
   selector: 'ts-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [LayoutComponent],
+  template: `
+    <ts-layout></ts-layout>`,
 })
 export class AppComponent {
-  title = 'frontend';
 }
