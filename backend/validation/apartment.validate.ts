@@ -7,7 +7,7 @@ export async function validateApartment(payload: Apartment) {
         rooms: Joi.number().min(1).required(),
         price: Joi.number().min(1).required(),
         name: Joi.string().min(1).max(98).required(),
-        description: Joi.string().max(98).required()
+        description: Joi.string().max(998).required()
     });
 
     try {

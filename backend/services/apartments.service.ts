@@ -1,10 +1,32 @@
 import {apartmentRepository} from 'repositories';
 import {Apartment} from 'interfaces';
 import {validateApartment} from 'validation/apartment.validate';
+import {Filters} from 'interfaces/filters.interface';
+import {Query} from 'express-serve-static-core';
+import {convertRequestQueryToGetApartments} from 'utils/helpers';
+import {CollationOptions} from 'mongodb';
 
 class ApartmentService {
-    async getList() {
-        return apartmentRepository.find({}).lean();
+    async getList(query: Query) {
+        const {filters, sorting, page, limit} = await convertRequestQueryToGetApartments(query);
+        const collation: CollationOptions = {locale: 'en', caseLevel: false, strength: 1};
+
+        const apartments = await apartmentRepository
+            .find(filters)
+            .collation(collation)
+            .skip(page * limit)
+            .sort([[sorting.field, sorting.order]])
+            .limit(limit)
+            .lean();
+
+        if (Object.keys(filters).length) {
+            const amount = await this.getAmount(filters);
+            return [apartments, amount];
+        }
+
+        const amount = await this.getAmount({});
+
+        return [apartments, amount];
     }
 
     async getOne(id: string) {
@@ -25,6 +47,11 @@ class ApartmentService {
 
     async deleteApartment(id: string) {
         return apartmentRepository.deleteOne({_id: id}).lean();
+    }
+
+    private async getAmount(filters: Filters) {
+        const apartments = await apartmentRepository.find(filters).lean();
+        return apartments.length;
     }
 }
 

@@ -4,9 +4,12 @@ import {Apartment} from 'interfaces';
 
 async function getList(req: Request, res: Response, next: NextFunction) {
     try {
-        const apartments = await apartmentService.getList();
+        const [apartments, amount] = await apartmentService.getList(req.query);
 
-        res.status(200).json(apartments);
+        res.status(200).json({
+            amount,
+            data: apartments
+        });
     } catch (error) {
         next(error);
     }
