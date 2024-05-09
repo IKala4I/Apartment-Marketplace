@@ -1,0 +1,122 @@
+[
+  {
+    "rooms": 2,
+    "name": "Cozy Apartment in Downtown",
+    "price": 2000,
+    "description": "This apartment is located in the heart of downtown with easy access to shopping and dining."
+  },
+  {
+    "rooms": 1,
+    "name": "Modern Loft with City View",
+    "price": 1800,
+    "description": "Enjoy breathtaking views of the city skyline from this modern loft apartment."
+  },
+  {
+    "rooms": 3,
+    "name": "Luxury Penthouse with Panoramic Views",
+    "price": 5000,
+    "description": "Indulge in luxury living with this spacious penthouse offering panoramic views of the city."
+  },
+  {
+    "rooms": 2,
+    "name": "Charming Studio Near Central Park",
+    "price": 2500,
+    "description": "Experience the charm of New York City with this cozy studio apartment just steps away from Central Park."
+  },
+  {
+    "rooms": 4,
+    "name": "Spacious Family Apartment",
+    "price": 3000,
+    "description": "Perfect for families, this spacious apartment offers ample living space and comfort."
+  },
+  {
+    "rooms": 1,
+    "name": "Studio with River View",
+    "price": 1500,
+    "description": "Wake up to stunning views of the river from this cozy studio apartment."
+  },
+  {
+    "rooms": 2,
+    "name": "Sunny Apartment in Historic District",
+    "price": 2200,
+    "description": "Bright and sunny apartment located in a charming historic district."
+  },
+  {
+    "rooms": 3,
+    "name": "Modern Apartment with Balcony",
+    "price": 2800,
+    "description": "Enjoy the convenience of city living with the luxury of a private balcony in this modern apartment."
+  },
+  {
+    "rooms": 2,
+    "name": "Urban Chic Loft",
+    "price": 1900,
+    "description": "Experience urban living at its finest with this chic loft apartment."
+  },
+  {
+    "rooms": 3,
+    "name": "Executive Suite with City View",
+    "price": 4000,
+    "description": "Experience luxury living in this executive suite with breathtaking views of the city."
+  },
+  {
+    "rooms": 1,
+    "name": "Quaint Apartment in Historic Brownstone",
+    "price": 1700,
+    "description": "Experience the charm of old New York in this cozy apartment located in a historic brownstone building."
+  },
+  {
+    "rooms": 2,
+    "name": "Modern Condo with Skyline Views",
+    "price": 2800,
+    "description": "Enjoy contemporary living with stunning skyline views from this modern condo."
+  },
+  {
+    "rooms": 3,
+    "name": "Elegant Townhouse with Garden",
+    "price": 3500,
+    "description": "Step into luxury with this elegant townhouse featuring a beautiful garden oasis."
+  },
+  {
+    "rooms": 1,
+    "name": "Chic Studio in Trendy Neighborhood",
+    "price": 1500,
+    "description": "Live in style in this chic studio apartment located in a trendy and vibrant neighborhood."
+  },
+  {
+    "rooms": 2,
+    "name": "Sleek Apartment with Modern Amenities",
+    "price": 2200,
+    "description": "Experience modern living at its best with this sleek apartment equipped with top-notch amenities."
+  },
+  {
+    "rooms": 3,
+    "name": "Luxurious High-Rise with Rooftop Pool",
+    "price": 5000,
+    "description": "Indulge in luxury living with this spacious high-rise apartment featuring a rooftop pool and panoramic city views."
+  },
+  {
+    "rooms": 2,
+    "name": "Cosy Loft in Artsy District",
+    "price": 1900,
+    "description": "Get inspired by the creative vibes of this cosy loft located in an artsy district."
+  },
+  {
+    "rooms": 4,
+    "name": "Family-Friendly Apartment with Park Access",
+    "price": 3200,
+    "description": "Ideal for families, this spacious apartment offers easy access to a nearby park for outdoor activities."
+  },
+  {
+    "rooms": 1,
+    "name": "Studio with Urban Views",
+    "price": 1600,
+    "description": "Enjoy the energy of the city from the comfort of this stylish studio apartment with urban views."
+  },
+  {
+    "rooms": 3,
+    "name": "Executive Apartment in Business District",
+    "price": 4000,
+    "description": "Live in luxury in this executive apartment located in the heart of the bustling business district."
+  }
+]
