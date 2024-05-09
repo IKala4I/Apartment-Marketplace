@@ -1,1 +1,25 @@
+@import 'styles/normalize';
+@import 'styles/variables';
+
 /* You can add global styles to this file, and also import other style files */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
