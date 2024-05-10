@@ -41,12 +41,8 @@ input.right-align {
     flex-direction: column;
   }
 
-  mat-form-field.large {
+  mat-form-field.large, mat-form-field.small {
     width: 60%;
-  }
-
-  mat-form-field.small {
-    width: 25%;
   }
 
   .submit-btn {
@@ -59,12 +55,8 @@ input.right-align {
     flex-direction: column;
   }
 
-  mat-form-field.large {
+  mat-form-field.large, mat-form-field.small {
     width: 75%;
-  }
-
-  mat-form-field.small {
-    width: 50%;
   }
 
   .submit-btn {

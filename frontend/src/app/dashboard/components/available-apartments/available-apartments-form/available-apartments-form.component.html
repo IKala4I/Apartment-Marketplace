@@ -1,3 +1,23 @@
 <div class="container">
-  <p>form</p>
+  <form class="form">
+    <div class="sorting-block">
+      <h4>Sort by:</h4>
+      <mat-form-field>
+        <mat-label>Price</mat-label>
+        <mat-select>
+          <mat-option>None</mat-option>
+          <mat-option value="asc">Lowest To High</mat-option>
+          <mat-option value="desc">High To Lowest</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="filtration-block">
+      <h4>Filter by:</h4>
+      <mat-form-field hintLabel="Min 1 room">
+        <mat-label>Rooms</mat-label>
+        <input type="number" matInput min="1" formControlName="rooms">
+      </mat-form-field>
+    </div>
+  </form>
 </div>
