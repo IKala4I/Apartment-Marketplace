@@ -1,0 +1,33 @@
+<div class="container">
+  <h2 mat-dialog-title>Edit apartment</h2>
+  <mat-dialog-content>
+    <form class="edit-form" [formGroup]="editForm" (ngSubmit)="onSubmit()">
+      <mat-form-field floatLabel="always" class="large name-field" hintLabel="Max 98 characters">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Ex. Flat in the city center" formControlName="name" maxlength="98">
+        <mat-hint align="end">{{ nameLength }}/98</mat-hint>
+      </mat-form-field>
+      <mat-form-field floatLabel="always" class="small rooms-field" hintLabel="Min 1 room">
+        <mat-label>Rooms</mat-label>
+        <input type="number" matInput placeholder="4" formControlName="rooms" required>
+      </mat-form-field>
+      <mat-form-field floatLabel="always" class="small price-field" hintLabel="Min 1$">
+        <mat-label>Rent Price</mat-label>
+        <input type="number" matInput placeholder="99.00" class="right-align" formControlName="price" required>
+        <span matTextPrefix>$&nbsp;</span>
+      </mat-form-field>
+      <mat-form-field floatLabel="always" class="large description field" hintLabel="Max 998 characters">
+        <mat-label>Description</mat-label>
+        <textarea matInput placeholder="Enjoy the energy of the city" class="description" maxlength="998"
+                  formControlName="description"
+                  required></textarea>
+        <mat-hint align="end">{{ descriptionLength }}/998</mat-hint>
+      </mat-form-field>
+      <button mat-flat-button color="accent" type="submit" class="submit-btn" [disabled]="!editForm.valid">Update
+      </button>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button class="cancel-btn" mat-button mat-dialog-close="close" cdkFocusInitial>Cancel</button>
+  </mat-dialog-actions>
+</div>

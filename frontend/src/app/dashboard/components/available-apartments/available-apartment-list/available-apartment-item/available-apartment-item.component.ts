@@ -13,6 +13,9 @@ import {
 import {finalize, iif, of, Subject, switchMap, takeUntil} from 'rxjs';
 import {ApartmentService} from 'src/app/common/services/apartment.service';
 import {SnackbarService} from 'src/app/common/services/snackbar.service';
+import {
+  EditApartmentModalFormComponent
+} from 'src/app/dashboard/components/available-apartments/edit-apartment-modal-form/edit-apartment-modal-form.component';
 
 @Component({
   selector: 'ts-available-apartment-item',
@@ -63,6 +66,14 @@ export class AvailableApartmentItemComponent implements OnDestroy {
         }),
         takeUntil(this.untilSubject$)
       );
+  }
+
+  openEditModalForm(event: Event) {
+    event.stopPropagation();
+
+    this.dialog.open(EditApartmentModalFormComponent, {
+      data: this.apartment
+    });
   }
 
   ngOnDestroy(): void {

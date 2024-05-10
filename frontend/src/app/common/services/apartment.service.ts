@@ -37,4 +37,8 @@ export class ApartmentService {
   public deleteApartment(id: string) {
     return this.http.delete(`${environment.apiUrl}/apartments/${id}`);
   }
+
+  public updateApartment(id: string, apartment: Apartment) {
+    return this.http.put(`${environment.apiUrl}/apartments/${id}`, apartment);
+  }
 }

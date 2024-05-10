@@ -1,0 +1,25 @@
+.container {
+  width: 60vw;
+}
+
+.mdc-dialog__content {
+  color: black;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.edit-form > * {
+  width: 100%
+}
+
+.cancel-btn{
+  width: 60%;
+  margin: 0 auto 0.5rem;
+}

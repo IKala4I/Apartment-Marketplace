@@ -8,7 +8,7 @@
       <span>${{ apartment.price }}</span>
     </div>
     <div class="right-part">
-      <button mat-flat-button color="primary">Edit</button>
+      <button mat-flat-button color="primary" (click)="openEditModalForm($event)">Edit</button>
       <button mat-flat-button color="warn" (click)="confirmDeleteModal($event)">Delete</button>
     </div>
   </div>
