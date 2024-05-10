@@ -17,6 +17,11 @@
       <mat-form-field>
         <mat-label>Rooms</mat-label>
         <input type="number" matInput formControlName="rooms">
+        @if (roomsValue) {
+          <button matSuffix mat-icon-button aria-label="Clear" (click)="clearRooms()">
+            <mat-icon>close</mat-icon>
+          </button>
+        }
       </mat-form-field>
     </div>
   </form>
