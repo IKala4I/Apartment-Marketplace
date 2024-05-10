@@ -1,13 +1,10 @@
 import {Query} from 'express-serve-static-core';
 import {ApartmentQuery} from 'interfaces/apartment.interface';
-import {APARTMENT_LIMIT} from 'constants/apartment.constant';
 
 export async function convertRequestQueryToGetApartments(reqQuery: Query) {
     const query: ApartmentQuery = {
         filters: {},
-        sorting: {},
-        page: reqQuery.page ? parseInt(reqQuery.page as string) : 0,
-        limit: reqQuery.limit ? parseInt(reqQuery.limit as string) : APARTMENT_LIMIT
+        sorting: {}
     };
 
     if (reqQuery.rooms) {

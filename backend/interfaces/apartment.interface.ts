@@ -8,6 +8,4 @@ export interface Apartment {
 export interface ApartmentQuery{
     filters: {[key: string]: any};
     sorting: {[key: string]: any};
-    page: number;
-    limit: number;
 }

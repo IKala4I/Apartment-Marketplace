@@ -8,15 +8,13 @@ import {CollationOptions} from 'mongodb';
 
 class ApartmentService {
     async getList(query: Query) {
-        const {filters, sorting, page, limit} = await convertRequestQueryToGetApartments(query);
+        const {filters, sorting} = await convertRequestQueryToGetApartments(query);
         const collation: CollationOptions = {locale: 'en', caseLevel: false, strength: 1};
 
         const apartments = await apartmentRepository
             .find(filters)
             .collation(collation)
-            .skip(page * limit)
             .sort([[sorting.field, sorting.order]])
-            .limit(limit)
             .lean();
 
         if (Object.keys(filters).length) {

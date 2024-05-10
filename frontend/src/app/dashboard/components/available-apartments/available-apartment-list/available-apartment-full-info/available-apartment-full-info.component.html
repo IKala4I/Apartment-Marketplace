@@ -1,0 +1,12 @@
+<mat-dialog-content>
+  <h2 class="name">{{ data.name }}</h2>
+  <div class="span-block">
+    <span class="rooms">{{ data.rooms }} rooms</span>
+    <span class="slash">/</span>
+    <span class="price">${{ data.price }}</span>
+  </div>
+  <p class="description">{{ data.description }}</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close="close">Close</button>
+</mat-dialog-actions>
