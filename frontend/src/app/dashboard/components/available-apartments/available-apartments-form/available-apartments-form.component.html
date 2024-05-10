@@ -1,10 +1,10 @@
 <div class="container">
-  <form class="form">
+  <form class="form" [formGroup]="manageForm">
     <div class="sorting-block">
       <h4>Sort by:</h4>
       <mat-form-field>
         <mat-label>Price</mat-label>
-        <mat-select>
+        <mat-select (selectionChange)="sortApartments($event)" formControlName="price">
           <mat-option>None</mat-option>
           <mat-option value="asc">Lowest To High</mat-option>
           <mat-option value="desc">High To Lowest</mat-option>
@@ -14,9 +14,9 @@
 
     <div class="filtration-block">
       <h4>Filter by:</h4>
-      <mat-form-field hintLabel="Min 1 room">
+      <mat-form-field>
         <mat-label>Rooms</mat-label>
-        <input type="number" matInput min="1" formControlName="rooms">
+        <input type="number" matInput formControlName="rooms">
       </mat-form-field>
     </div>
   </form>
