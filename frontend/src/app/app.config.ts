@@ -4,6 +4,7 @@ import {routes} from 'src/app/app.routes';
 import {provideAnimations} from '@angular/platform-browser/animations';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {provideHttpClient} from '@angular/common/http';
 
 
 export const appConfig: ApplicationConfig = {
@@ -11,6 +12,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAnimations(),
     provideAnimationsAsync(),
-    importProvidersFrom([MatSnackBarModule])
+    importProvidersFrom([MatSnackBarModule]),
+    provideHttpClient()
   ]
 };

@@ -1,0 +1,9 @@
+<div class="container">
+  @for (apartment of apartments; track apartment._id) {
+    <div class="item-wrapper">
+      <ts-available-apartment-item [apartment]="apartment"></ts-available-apartment-item>
+    </div>
+  } @empty {
+    <h4>Empty list of apartments</h4>
+  }
+</div>

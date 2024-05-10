@@ -1,0 +1,245 @@
+{
+  "amount": 20,
+  "data": [
+    {
+      "rooms": 2,
+      "name": "Cozy Apartment in Downtown",
+      "price": 2000,
+      "description": "This apartment is located in the heart of downtown with easy access to shopping and dining.",
+      "createdAt": {
+        "$date": "2024-04-01T08:20:45.123Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-01T08:20:45.123Z"
+      }
+    },
+    {
+      "rooms": 1,
+      "name": "Modern Loft with City View",
+      "price": 1800,
+      "description": "Enjoy breathtaking views of the city skyline from this modern loft apartment.",
+      "createdAt": {
+        "$date": "2024-04-02T12:45:21.567Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-02T12:45:21.567Z"
+      }
+    },
+    {
+      "rooms": 3,
+      "name": "Luxury Penthouse with Panoramic Views",
+      "price": 5000,
+      "description": "Indulge in luxury living with this spacious penthouse offering panoramic views of the city.",
+      "createdAt": {
+        "$date": "2024-04-05T14:30:10.890Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-05T14:30:10.890Z"
+      }
+    },
+    {
+      "rooms": 2,
+      "name": "Charming Studio Near Central Park",
+      "price": 2500,
+      "description": "Experience the charm of New York City with this cozy studio apartment just steps away from Central Park.",
+      "createdAt": {
+        "$date": "2024-04-08T17:55:33.421Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-08T17:55:33.421Z"
+      }
+    },
+    {
+      "rooms": 4,
+      "name": "Spacious Family Apartment",
+      "price": 3000,
+      "description": "Perfect for families, this spacious apartment offers ample living space and comfort.",
+      "createdAt": {
+        "$date": "2024-04-10T09:10:12.765Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-10T09:10:12.765Z"
+      }
+    },
+    {
+      "rooms": 1,
+      "name": "Studio with River View",
+      "price": 1500,
+      "description": "Wake up to stunning views of the river from this cozy studio apartment.",
+      "createdAt": {
+        "$date": "2024-04-12T20:25:59.234Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-12T20:25:59.234Z"
+      }
+    },
+    {
+      "rooms": 2,
+      "name": "Sunny Apartment in Historic District",
+      "price": 2200,
+      "description": "Bright and sunny apartment located in a charming historic district.",
+      "createdAt": {
+        "$date": "2024-04-15T11:40:30.987Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-15T11:40:30.987Z"
+      }
+    },
+    {
+      "rooms": 3,
+      "name": "Modern Apartment with Balcony",
+      "price": 2800,
+      "description": "Enjoy the convenience of city living with the luxury of a private balcony in this modern apartment.",
+      "createdAt": {
+        "$date": "2024-04-18T13:15:44.654Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-18T13:15:44.654Z"
+      }
+    },
+    {
+      "rooms": 2,
+      "name": "Urban Chic Loft",
+      "price": 1900,
+      "description": "Experience urban living at its finest with this chic loft apartment.",
+      "createdAt": {
+        "$date": "2024-04-20T16:30:22.332Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-20T16:30:22.332Z"
+      }
+    },
+    {
+      "rooms": 3,
+      "name": "Executive Suite with City View",
+      "price": 4000,
+      "description": "Experience luxury living in this executive suite with breathtaking views of the city.",
+      "createdAt": {
+        "$date": "2024-04-22T18:55:11.876Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-22T18:55:11.876Z"
+      }
+    },
+    {
+      "rooms": 1,
+      "name": "Quaint Apartment in Historic Brownstone",
+      "price": 1700,
+      "description": "Experience the charm of old New York in this cozy apartment located in a historic brownstone building.",
+      "createdAt": {
+        "$date": "2024-04-25T10:05:33.444Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-25T10:05:33.444Z"
+      }
+    },
+    {
+      "rooms": 2,
+      "name": "Modern Condo with Skyline Views",
+      "price": 2800,
+      "description": "Enjoy contemporary living with stunning skyline views from this modern condo.",
+      "createdAt": {
+        "$date": "2024-04-28T21:20:55.789Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-28T21:20:55.789Z"
+      }
+    },
+    {
+      "rooms": 3,
+      "name": "Elegant Townhouse with Garden",
+      "price": 3500,
+      "description": "Step into luxury with this elegant townhouse featuring a beautiful garden oasis.",
+      "createdAt": {
+        "$date": "2024-05-01T09:30:17.543Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-01T09:30:17.543Z"
+      }
+    },
+    {
+      "rooms": 1,
+      "name": "Chic Studio in Trendy Neighborhood",
+      "price": 1500,
+      "description": "Live in style in this chic studio apartment located in a trendy and vibrant neighborhood.",
+      "createdAt": {
+        "$date": "2024-05-04T14:45:36.222Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-04T14:45:36.222Z"
+      }
+    },
+    {
+      "rooms": 2,
+      "name": "Sleek Apartment with Modern Amenities",
+      "price": 2200,
+      "description": "Experience modern living at its best with this sleek apartment equipped with top-notch amenities.",
+      "createdAt": {
+        "$date": "2024-05-07T16:55:49.789Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-07T16:55:49.789Z"
+      }
+    },
+    {
+      "rooms": 3,
+      "name": "Luxurious High-Rise with Rooftop Pool",
+      "price": 5000,
+      "description": "Indulge in luxury living with this spacious high-rise apartment featuring a rooftop pool and panoramic city views.",
+      "createdAt": {
+        "$date": "2024-05-08T11:10:28.654Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-08T11:10:28.654Z"
+      }
+    },
+    {
+      "rooms": 2,
+      "name": "Cosy Loft in Artsy District",
+      "price": 1900,
+      "description": "Get inspired by the creative vibes of this cosy loft located in an artsy district.",
+      "createdAt": {
+        "$date": "2024-05-02T13:25:19.123Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-02T13:25:19.123Z"
+      }
+    },
+    {
+      "rooms": 4,
+      "name": "Family-Friendly Apartment with Park Access",
+      "price": 3200,
+      "description": "Ideal for families, this spacious apartment offers easy access to a nearby park for outdoor activities.",
+      "createdAt": {
+        "$date": "2024-05-05T15:40:47.876Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-05T15:40:47.876Z"
+      }
+    },
+    {
+      "rooms": 1,
+      "name": "Studio with Urban Views",
+      "price": 1600,
+      "description": "Enjoy the energy of the city from the comfort of this stylish studio apartment with urban views.",
+      "createdAt": {
+        "$date": "2024-05-04T18:05:33.332Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-04T18:05:33.332Z"
+      }
+    },
+    {
+      "rooms": 3,
+      "name": "Executive Apartment in Business District",
+      "price": 4000,
+      "description": "Live in luxury in this executive apartment located in the heart of the bustling business district.",
+      "createdAt": {
+        "$date": "2024-05-03T20:20:10.567Z"
+      },
+      "updatedAt": {
+        "$date": "2024-05-03T20:20:10.567Z"
+      }
+    }
+  ]
+}

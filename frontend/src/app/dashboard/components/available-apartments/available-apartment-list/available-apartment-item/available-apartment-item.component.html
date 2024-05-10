@@ -1,0 +1,15 @@
+<ts-box-wrapper>
+  <div class="apartment">
+    <div class="left-part">
+      <h4>{{ apartment.name | truncate }}</h4>
+      <span class="slash">/</span>
+      <span>{{ apartment.rooms }} rooms</span>
+      <span class="slash">/</span>
+      <span>${{ apartment.price }}</span>
+    </div>
+    <div class="right-part">
+      <button mat-flat-button color="primary">Edit</button>
+      <button mat-flat-button color="warn">Delete</button>
+    </div>
+  </div>
+</ts-box-wrapper>

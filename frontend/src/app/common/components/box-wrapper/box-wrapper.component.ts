@@ -11,5 +11,5 @@ import {NgStyle} from '@angular/common';
   styleUrl: './box-wrapper.component.scss'
 })
 export class BoxWrapperComponent {
-  @Input() public backgroundColor: string = 'white';
+  @Input() public backgroundColor: string = '#FBFBFB';
 }

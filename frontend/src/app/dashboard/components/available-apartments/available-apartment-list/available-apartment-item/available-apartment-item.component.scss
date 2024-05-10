@@ -1,0 +1,52 @@
+ts-box-wrapper {
+  opacity: 0.8;
+}
+
+ts-box-wrapper:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.apartment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  h4 {
+    margin: 0;
+  }
+}
+
+.right-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .left-part {
+    flex-direction: column;
+  }
+
+  .slash {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .left-part {
+    width: 50%;
+    align-items: flex-start;
+  }
+  .right-part {
+    flex-direction: column;
+  }
+}
