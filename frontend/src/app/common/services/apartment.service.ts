@@ -3,25 +3,32 @@ import {HttpClient} from '@angular/common/http';
 import {ApiResponse} from 'src/app/common/models/Api-response';
 import {Apartment} from 'src/app/common/models/Apartment';
 import {BehaviorSubject} from 'rxjs';
+import {environment} from 'src/environment/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApartmentService {
   private apartments$ = new BehaviorSubject<Apartment[]>([]);
-
-  url: string = '/assets/apartment.json';
-  amount: number;
+  public amount: number;
 
   constructor(private http: HttpClient) {
   }
 
   public getApartments() {
-    this.http.get<ApiResponse<Apartment>>(this.url).subscribe(res => {
+    this.http.get<ApiResponse<Apartment>>(`${environment.apiUrl}/apartments`).subscribe(res => {
       this.amount = res.amount;
       this.apartments$.next(res.data);
     });
 
     return this.apartments$.asObservable();
+  }
+
+  public createApartment(apartment: Apartment) {
+    return this.http.post(`${environment.apiUrl}/apartments`, apartment);
+  }
+
+  public deleteApartment(id:string){
+    return this.http.delete(`${environment.apiUrl}/apartments/${id}`);
   }
 }

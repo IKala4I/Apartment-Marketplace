@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon",
-    "start:pm2": "ts-node index.ts"
+    "dev": "nodemon",
+    "start": "ts-node index.ts"
   },
   "author": "IKala4I",
   "license": "ISC",
