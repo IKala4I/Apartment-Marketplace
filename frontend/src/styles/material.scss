@@ -1,0 +1,18 @@
+@import 'src/styles/variables.scss';
+
+.mat-mdc-snack-bar-container {
+  text-align: center;
+
+  .mat-mdc-snack-bar-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  &.snackbar--error .mdc-snackbar__surface {
+    background-color: $pink;
+  }
+
+  &.snackbar--success .mdc-snackbar__surface {
+    background-color: $light-pine-green;
+  }
+}

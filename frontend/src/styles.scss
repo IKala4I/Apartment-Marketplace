@@ -9,17 +9,25 @@
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
+@import 'styles/material';
