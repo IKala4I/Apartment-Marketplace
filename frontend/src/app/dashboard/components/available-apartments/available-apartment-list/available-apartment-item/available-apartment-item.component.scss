@@ -1,16 +1,19 @@
 ts-box-wrapper {
   opacity: 0.8;
-}
 
-ts-box-wrapper:hover {
-  cursor: pointer;
-  opacity: 1;
+  &:hover{
+    opacity: 1;
+  }
 }
 
 .apartment {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover{
+    cursor: pointer;
+  }
 }
 
 .left-part {
