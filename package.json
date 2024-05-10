@@ -2,8 +2,13 @@
   "name": "apartment-marketplace",
   "version": "1.0.0",
   "scripts": {
-    "start": "cd backend && npm run start & cd frontend && npm run start"
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
   },
   "author": "IKala4I",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
